@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  postgres-testcontainers:
+    image: postgres:latest
+    container_name: postgres-testcontainers
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_USER: baz
+      POSTGRES_PASSWORD: welcome1
+      POSTGRES_DB: baz
